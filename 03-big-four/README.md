@@ -11,3 +11,6 @@
 индекс pos, метода да хвърли грешка. Ако pos+n > length(), да се върне подниза започващ от pos и стигащ до края на низа.
 - append(const MyString& str) - долепва низа str в края.
 - print() - отпечатва низа на екрана
+
+## git presentation
+https://slides.com/vladistoyanov/deck-065e5e
