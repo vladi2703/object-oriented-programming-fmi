@@ -1,5 +1,9 @@
 # Git
 
+# [Tаблица с Гитхъб Репозиторита на студентите](https://docs.google.com/spreadsheets/d/1exUWpsW2lGCGhCZ5IwTOpnCjr7U22iWlziyNZCcvnWo/edit?usp=sharing)
+
+**!! Моля въведете тук линкове към Github repository-то, в което смятате да качвате задачите си !!**
+
 Тук ще качваме допълнителни материали, които са свързани с Git.
 
 ## Линкове към личните ни профили
