@@ -19,8 +19,8 @@
 * [Полезен сайт за визуализация на Git](https://learngitbranching.js.org/)
   * Сайтът ще ви помогне да си представите какво точно прави Git, когато изпълнявате команди като `git commit`, `git merge` и т.н. Препоръчва се да направине уроците от Introduction Sequence, а след това да опитате да направите уроците от Remote Branches.
 * [Git - the simple guide](http://rogerdudler.github.io/git-guide/)
-* [Научете Git в 15 минути](http://try.github.io/levels/1/challenges/1)
   * Не е необходимо да задълбочавате в темата `branching`
+* [Научете Git в 15 минути](http://try.github.io/levels/1/challenges/1)
 * [Git книга на български)](http://www.git-scm.com/book/bg/v2)
 
 ## Видеа
