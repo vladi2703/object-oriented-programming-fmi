@@ -96,6 +96,55 @@ int main() {
 
 :bangbang: Важно е структурата да не съдържа никакви указатели (включително динамично заделена памет), защото те ще сочат към непознати места в паметта.
 
+### Писане на `std::string` във файл
+
+За да запишем `std::string` във файл, трябва да преобразуваме низа в масив от символи (c-низ) и да го запишем във файл. Третираме стринга като динамична памет - не можем да записваме и четем директно обект, съдържащ `std::string`, във файл.
+
+Писане на `std::string` във файл:
+
+```cpp
+std::string name = "Pesho";
+file.write(name.c_str(), name.size());
+```
+
+Обект от тип `Student` (съдържащ `std::string`) във файл:
+
+```cpp
+struct Student{
+  std::string name;
+  int fn;
+  double grade;
+};
+```
+
+Писане на обект от тип `Student` във файл:
+
+```cpp
+  Student s = {"Pesho", 12345, 5.5};
+  // отваряме файл за писане.....
+  o_file.write(s.name.size(), sizeof(int)); // записваме размера на името
+  o_file.write(s.name.c_str(), s.name.size()); // записваме името
+  o_file.write((char*)&s.fn, sizeof(s.fn));
+  o_file.write((char*)&s.grade, sizeof(s.grade));
+  o_file.close();
+```
+
+Четена не обект от тип `Student` от файл:
+
+``` cpp
+  Student s2;
+  // отваряме файла за четене.....
+  i_file.read((char*)&s2.name.size(), sizeof(int)); // четем размера на името
+  char* name = new char[s2.name.size() + 1]; // заделяме памет за името
+  i_file.read(name, s2.name.size()); // четем името
+  name[s2.name.size()] = '\0'; 
+  s2.name = name; // присвояваме името
+  delete[] name; // освобождаваме паметта
+  i_file.read((char*)&s2.fn, sizeof(s2.fn));
+  i_file.read((char*)&s2.grade, sizeof(s2.grade));
+  i_file.close();
+```
+
 ## Задачи за упражнение
 
 ### Задача 1
