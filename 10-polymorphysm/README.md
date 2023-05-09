@@ -48,7 +48,7 @@ int main(){
     Animal mouse = Mouse(); // what will happen here?
     mouse.makeSound(); // whats the sound?
 
-    Animal* jivotno = Checheneca();
+    Animal* jivotno = new Checheneca();
     jivotno->makeSound(); // whats the sound now?
 
 
@@ -221,6 +221,26 @@ int main() {
 
 :exclamation: Извод: правете деструктора на базовия клас виртуален. Дори той самият да е празен, важно е да бъде виртуален.
 
+Горния пример с виртуален деструктор:
+
+```cpp
+class Animal {
+public:
+    virtual ~Animal() {
+        std::cout << "Animal destructor" << std::endl;
+    }
+
+    virtual void makeSound() const = 0;
+};
+class Dog : public Animal {
+public:
+    ~Dog() override{
+        std::cout << "Dog destructor" << std::endl;
+    }
+    void makeSound() const override {
+        std::cout << "Bau!" << std::endl;
+    }
+};
 ## Задача 1
 
 Позволено е ползването на std::string и std::vector
@@ -261,6 +281,7 @@ copy() да връща указател(Shape*) към новосъздаден�
  /   \
 |     |
  \ _ /
+
 ```
 
 ## Задача 2
