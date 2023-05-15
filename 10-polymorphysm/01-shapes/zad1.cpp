@@ -16,6 +16,10 @@ int main()
     cont.addShape(sq2);
     cont.addShape(trig);
 
-    cont.printPerimeters();
-    cont.printShapes();
+    ShapeContainer cont2;
+
+    cont2 = cont;
+
+    cont2.printPerimeters();
+    cont2.printShapes();
 }
