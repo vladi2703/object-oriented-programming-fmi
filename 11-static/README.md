@@ -59,6 +59,8 @@ public:
 };
 int MyClass::staticVar = 0;
 int MyClass::square(int x) {
+    localVar = x; // Error: 'localVar' is a non-static member of 'MyClass'
+    staticVar = x; // OK
     return x * x;
 }
 int main() {
@@ -111,4 +113,4 @@ int main() {
 - марка
 - модел
 - масив с произволна дължина от авточасти (НЕ е разрешено използването на `std::vector`)
-- метод, `displayCarParts()`, който отпечатва всички части, които колата притежава. 
+- метод, `displayCarParts()`, който отпечатва всички части, които колата притежава.
