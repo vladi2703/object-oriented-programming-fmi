@@ -241,6 +241,8 @@ public:
         std::cout << "Bau!" << std::endl;
     }
 };
+```
+
 ## Задача 1
 
 Позволено е ползването на std::string и std::vector
