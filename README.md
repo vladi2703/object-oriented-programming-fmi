@@ -2,8 +2,8 @@
 
 ## :love_letter: Връзки: <br>
 
-Захари - zemarinov@uni-sofia.bg \
-Владимир - vladisto100@gmail.com
+Захари - <zemarinov@uni-sofia.bg> \
+Владимир - <vladisto100@gmail.com>
 
 ## :books: Упражнения
 
@@ -18,3 +18,5 @@
 | 7.  | [Работа с файлове и класове - преговор](./07-classes-and-files-exercise)         |
 | 8.  | [Шаблони](./08-templates)         |
 | 9.  | [Наследяване](./09-inheritance)         |
+| 10.  | [Полиморфизъм](./10-polymorphism)         |
+| 11.  | [Статични член данни и методи](./11-static)         |
