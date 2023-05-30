@@ -20,7 +20,7 @@ public:
     YesNoQuestion(const std::string& question1, double points1, bool correct_is_yes1);
 
     void ask();
-    int grade();
+    double grade();
     void print();
 };
 
