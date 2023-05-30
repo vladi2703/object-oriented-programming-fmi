@@ -11,7 +11,7 @@ public:
     OpenQuestion(const std::string& question1, double points1);
 
     void ask();
-    int grade();
+    double grade();
     void print();
 };
 
