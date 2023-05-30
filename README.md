@@ -22,3 +22,4 @@
 | 11.  | [Статични член данни и методи](./11-static)         |
 | 12. | [Подготовка за контролно 2](./12-excercise) |
 | 13. | [Множествено наследяване](./13-multiple-inheritance) |
+| 14. | [Упражнение и Factory design pattern](./14-factory-design-pattern) |
