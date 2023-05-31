@@ -13,7 +13,7 @@ public:
     Question(const std::string& question1, double points1);
 
     virtual void ask() = 0;
-    virtual int grade() = 0;
+    virtual double grade() = 0;
     virtual void print() = 0;
     /*
         може версията на базовия клас да не е виртуална и да отпечатва question и points

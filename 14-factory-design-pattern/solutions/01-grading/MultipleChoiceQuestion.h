@@ -33,7 +33,7 @@ public:
     */
 
     void ask();
-    int grade();
+    double grade();
     void print();
 };
 
