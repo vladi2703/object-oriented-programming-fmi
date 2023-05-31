@@ -4,7 +4,7 @@
 #ifndef MULTIPLECHOICEQUESTION_H_
 #define MULTIPLECHOICEQUESTION_H_
 
-class MultipleChoiceQuestion
+class MultipleChoiceQuestion : public Question
 {
     int n;
     std::vector<bool> correct_is_yes;
@@ -33,7 +33,7 @@ public:
     */
 
     void ask();
-    double grade();
+    int grade();
     void print();
 };
 
