@@ -18,4 +18,5 @@ public:
     Exam();
 	Exam(const Exam&) = delete;
 	Exam& operator=(const Exam&) = delete;
+	~Exam();
 };
