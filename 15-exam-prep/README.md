@@ -14,7 +14,7 @@
 Ако `r = r1*r2`, то  
 `r.subject = r1.subject`  
 `r.object = r2.obejct`  
-`r.action = r1.action` `r1.object` *", which is"* `r2.action`  
+`r.relation = r1.relation` `r1.object` *", which is"* `r2.relation`  
   
 Пример: `(r1*r2).print()`: 2 is smaller than 6, which is divisible by 3  
   
