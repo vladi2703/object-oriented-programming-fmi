@@ -24,3 +24,5 @@
 | 13. | [Множествено наследяване](./13-multiple-inheritance) |
 | 14. | [Упражнение и Factory design pattern](./14-factory-design-pattern) |
 | 15. | [Подготовка за изпит](./15-exam-prep) |
+
+Благодарим за редовното участие в упражненията! :heart:
